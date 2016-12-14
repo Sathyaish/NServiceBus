@@ -10,5 +10,4 @@ using NServiceBus;
 [assembly: ComVisible(false)]
 [assembly: CLSCompliant(true)]
 
-// TODO: Introduce proper way to automatically generate these dates before first hotfix/next minor
-[assembly: ReleaseDate("2016-12-12", "2016-12-12")]
+[assembly: ReleaseDate]

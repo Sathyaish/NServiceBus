@@ -4,13 +4,13 @@ namespace NServiceBus
 
     sealed class ReleaseDateAttribute : Attribute
     {
-        public ReleaseDateAttribute(string originalDate, string date)
+        public ReleaseDateAttribute()
         {
-            OriginalDate = originalDate;
-            Date = date;
+            OriginalDate = GitVersionInformation.CommitDate;
+            Date = GitVersionInformation.CommitDate;
         }
 
-        public string OriginalDate { get; private set; }
-        public string Date { get; private set; }
+        public string OriginalDate { get; }
+        public string Date { get; }
     }
 }
